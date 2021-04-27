@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import styled from 'styled-components'
 import { useDispatch, useSelector } from 'react-redux'
-import {useHistory} from 'react-router-dom'
+import {useHistory,Link} from 'react-router-dom'
 import { auth, provider } from '../firebase'
 import {
     selectUserName,
@@ -68,27 +68,27 @@ const Header = (props) => {
                 ? <Login onClick={handleAuth}>Login</Login>
                 :<>
                 <NavMenu>
-                    <a href='/home'>
+                    <a >
                         <img src='/images/home-icon.svg' alt='HOME' />
                         <span>HOME</span>
                     </a>
-                    <a href='/home'>
+                    <a>
                         <img src='/images/search-icon.svg' alt='HOME' />
                         <span>SEARCH</span>
                     </a>
-                    <a href='/home'>
+                    <a>
                         <img src='/images/watchlist-icon.svg' alt='HOME' />
                         <span>WATCHLIST</span>
                     </a>
-                    <a href='/home'>
+                    <a>
                         <img src='/images/original-icon.svg' alt='HOME' />
                         <span>ORIGINALS</span>
                     </a>
-                    <a href='/home'>
+                    <a>
                         <img src='/images/movie-icon.svg' alt='HOME' />
                         <span>MOVIES</span>
                     </a>
-                    <a href='/home'>
+                    <a>
                         <img src='/images/series-icon.svg' alt='HOME' />
                         <span>SERIES</span>
                     </a>
@@ -200,9 +200,9 @@ const NavMenu = styled.div`
         }
     }
 
-    /* @media (max-width: 768px) {
+    @media (max-width: 768px) {
         display:none;
-    } */
+    }
 `
 
 const Login = styled.a`

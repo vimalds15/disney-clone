@@ -82,7 +82,7 @@ const Container = styled.div`
 
 const Background = styled.div`
     left:0px;
-    opacity:0.8px;
+    opacity:0.8;
     position: fixed;
     right: 0px;
     top: 0px;
@@ -90,7 +90,7 @@ const Background = styled.div`
 
     img{
         width:100vw;
-        height:200vh;
+        height:100vh;
 
         @media (max-width:768px){
             width:initial;
